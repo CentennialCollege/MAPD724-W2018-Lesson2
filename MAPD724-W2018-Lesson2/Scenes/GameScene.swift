@@ -10,18 +10,39 @@ var screenHeight: CGFloat?
 class GameScene: SKScene {
     
     // Game Variables
+    var oceanSprite: Ocean?
     var planeSprite: Plane?
     
     override func didMove(to view: SKView) {
         screenWidth = screenSize.width
         screenHeight = screenSize.height
         
+        // add ocean
+        self.oceanSprite = Ocean()
+        self.addChild(self.oceanSprite!)
+        
         // add plane
         self.planeSprite = Plane()
         self.planeSprite?.position = CGPoint(x: screenWidth! * 0.5, y: 50)
         self.addChild(self.planeSprite!)
         
-        print(self.planeSprite?.halfwidth)
+        // play background engine sound
+        let engineSound = SKAudioNode(fileNamed: "engine.mp3")
+        self.addChild(engineSound)
+        engineSound.autoplayLooped = true
+        
+        // preload sounds
+        do {
+            let sounds:[String] = ["thunder", "yay"]
+            for sound in sounds {
+                let path:String = Bundle.main.path(forResource: sound, ofType: "mp3")!
+                let url: URL = URL(fileURLWithPath: path)
+                let player: AVAudioPlayer = try AVAudioPlayer(contentsOf: url)
+                player.prepareToPlay()
+            }
+        } catch {
+
+        }
         
     }
     
@@ -57,6 +78,7 @@ class GameScene: SKScene {
     
     
     override func update(_ currentTime: TimeInterval) {
+        self.oceanSprite?.Update()
         self.planeSprite?.Update()
     }
 }
