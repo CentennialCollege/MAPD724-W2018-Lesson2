@@ -13,7 +13,7 @@ class Cloud: GameObject {
     // constructor
     init() {
         // initialize the object with an image
-        super.init(imageString: "cloud", initialScale: 1.0)
+        super.init(imageString: "cloud", initialScale: 0.6)
         Start()
     }
     
@@ -22,7 +22,6 @@ class Cloud: GameObject {
     }
     
     override func Start() {
-        self.setScale(0.6)
         self.zPosition = 3
         self.Reset()
         self.dy = 5.0
