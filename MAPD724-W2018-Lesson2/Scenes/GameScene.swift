@@ -16,8 +16,8 @@ class GameScene: SKScene {
     var cloudSprites: [Cloud] = []
     
     override func didMove(to view: SKView) {
-        screenWidth = screenSize.width
-        screenHeight = screenSize.height
+        screenWidth = frame.width
+        screenHeight = frame.height
         
         // add ocean
         self.oceanSprite = Ocean()
@@ -38,6 +38,22 @@ class GameScene: SKScene {
             cloudSprites.append(cloud)
             self.addChild(cloudSprites[index])
         }
+        
+        // add a Label
+        var livesLabel: SKLabelNode = SKLabelNode(text: "Lives: 5")
+
+        //livesLabel.anchorPoint = CGPoint.zero
+        livesLabel.position = CGPoint(x: 73.0, y: frame.height - 33.0)
+        
+        livesLabel.fontSize = 30.0
+        livesLabel.fontColor = SKColor.yellow
+        livesLabel.fontName = "Dock51"
+        livesLabel.zPosition = 10
+        
+        print(livesLabel.frame.width)
+        print(livesLabel.frame.height)
+        
+        self.addChild(livesLabel)
         
         
         // play background engine sound
