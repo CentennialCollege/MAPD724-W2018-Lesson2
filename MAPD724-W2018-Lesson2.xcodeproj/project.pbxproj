@@ -12,6 +12,9 @@
 		E92D9B522029496D00F5D660 /* Distance.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92D9B512029496D00F5D660 /* Distance.swift */; };
 		E92D9B5520294A9600F5D660 /* CollisionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92D9B5420294A9600F5D660 /* CollisionManager.swift */; };
 		E940DF40203267E50053E37D /* ScoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E940DF3F203267E50053E37D /* ScoreManager.swift */; };
+		E940DF4420327A1A0053E37D /* yay.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E940DF4120327A190053E37D /* yay.mp3 */; };
+		E940DF4520327A1A0053E37D /* engine.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E940DF4220327A190053E37D /* engine.mp3 */; };
+		E940DF4620327A1A0053E37D /* thunder.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E940DF4320327A190053E37D /* thunder.mp3 */; };
 		E9CD852A201FEBEF003519F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9CD8529201FEBEF003519F4 /* AppDelegate.swift */; };
 		E9CD852C201FEBEF003519F4 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = E9CD852B201FEBEF003519F4 /* GameScene.sks */; };
 		E9CD852E201FEBEF003519F4 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = E9CD852D201FEBEF003519F4 /* Actions.sks */; };
@@ -20,10 +23,6 @@
 		E9CD8535201FEBEF003519F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9CD8533201FEBEF003519F4 /* Main.storyboard */; };
 		E9CD8537201FEBEF003519F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9CD8536201FEBEF003519F4 /* Assets.xcassets */; };
 		E9CD853A201FEBEF003519F4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9CD8538201FEBEF003519F4 /* LaunchScreen.storyboard */; };
-		E9CD8544201FED1D003519F4 /* yay.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E9CD8541201FED1D003519F4 /* yay.mp3 */; };
-		E9CD8545201FED1D003519F4 /* engine.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E9CD8542201FED1D003519F4 /* engine.mp3 */; };
-		E9CD8546201FED1D003519F4 /* thunder.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E9CD8543201FED1D003519F4 /* thunder.mp3 */; };
-		E9CD8548201FED92003519F4 /* Dock51.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E9CD8547201FED6F003519F4 /* Dock51.ttf */; };
 		E9CD85502020052A003519F4 /* GameObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9CD854F2020052A003519F4 /* GameObject.swift */; };
 		E9CD8552202008F3003519F4 /* GamePrototcol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9CD8551202008F3003519F4 /* GamePrototcol.swift */; };
 		E9CD85542020097F003519F4 /* Plane.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9CD85532020097F003519F4 /* Plane.swift */; };
@@ -36,6 +35,10 @@
 		E92D9B512029496D00F5D660 /* Distance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Distance.swift; sourceTree = "<group>"; };
 		E92D9B5420294A9600F5D660 /* CollisionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollisionManager.swift; sourceTree = "<group>"; };
 		E940DF3F203267E50053E37D /* ScoreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreManager.swift; sourceTree = "<group>"; };
+		E940DF4120327A190053E37D /* yay.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = yay.mp3; sourceTree = "<group>"; };
+		E940DF4220327A190053E37D /* engine.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = engine.mp3; sourceTree = "<group>"; };
+		E940DF4320327A190053E37D /* thunder.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = thunder.mp3; sourceTree = "<group>"; };
+		E940DF4720327A320053E37D /* Dock51.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Dock51.ttf; sourceTree = "<group>"; };
 		E9CD8526201FEBEF003519F4 /* MAPD724-W2018-Lesson2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MAPD724-W2018-Lesson2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9CD8529201FEBEF003519F4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E9CD852B201FEBEF003519F4 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -46,10 +49,6 @@
 		E9CD8536201FEBEF003519F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E9CD8539201FEBEF003519F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E9CD853B201FEBEF003519F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E9CD8541201FED1D003519F4 /* yay.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = yay.mp3; path = "../../../../Courses/Centennial College/MAPD724 - Advanced iOS Development/Week 2/Assets/audio/yay.mp3"; sourceTree = "<group>"; };
-		E9CD8542201FED1D003519F4 /* engine.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = engine.mp3; path = "../../../../Courses/Centennial College/MAPD724 - Advanced iOS Development/Week 2/Assets/audio/engine.mp3"; sourceTree = "<group>"; };
-		E9CD8543201FED1D003519F4 /* thunder.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = thunder.mp3; path = "../../../../Courses/Centennial College/MAPD724 - Advanced iOS Development/Week 2/Assets/audio/thunder.mp3"; sourceTree = "<group>"; };
-		E9CD8547201FED6F003519F4 /* Dock51.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Dock51.ttf; path = "../../../../Courses/Centennial College/MAPD724 - Advanced iOS Development/Week 2/Assets/fonts/Dock51.ttf"; sourceTree = "<group>"; };
 		E9CD854F2020052A003519F4 /* GameObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameObject.swift; sourceTree = "<group>"; };
 		E9CD8551202008F3003519F4 /* GamePrototcol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamePrototcol.swift; sourceTree = "<group>"; };
 		E9CD85532020097F003519F4 /* Plane.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plane.swift; sourceTree = "<group>"; };
@@ -104,10 +103,10 @@
 				E9CD8533201FEBEF003519F4 /* Main.storyboard */,
 				E9CD8536201FEBEF003519F4 /* Assets.xcassets */,
 				E9CD8538201FEBEF003519F4 /* LaunchScreen.storyboard */,
-				E9CD8542201FED1D003519F4 /* engine.mp3 */,
-				E9CD8543201FED1D003519F4 /* thunder.mp3 */,
-				E9CD8541201FED1D003519F4 /* yay.mp3 */,
-				E9CD8547201FED6F003519F4 /* Dock51.ttf */,
+				E940DF4220327A190053E37D /* engine.mp3 */,
+				E940DF4320327A190053E37D /* thunder.mp3 */,
+				E940DF4120327A190053E37D /* yay.mp3 */,
+				E940DF4720327A320053E37D /* Dock51.ttf */,
 				E9CD853B201FEBEF003519F4 /* Info.plist */,
 			);
 			path = "MAPD724-W2018-Lesson2";
@@ -195,14 +194,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E9CD8544201FED1D003519F4 /* yay.mp3 in Resources */,
 				E9CD8535201FEBEF003519F4 /* Main.storyboard in Resources */,
-				E9CD8545201FED1D003519F4 /* engine.mp3 in Resources */,
-				E9CD8548201FED92003519F4 /* Dock51.ttf in Resources */,
-				E9CD8546201FED1D003519F4 /* thunder.mp3 in Resources */,
+				E940DF4420327A1A0053E37D /* yay.mp3 in Resources */,
 				E9CD852C201FEBEF003519F4 /* GameScene.sks in Resources */,
 				E9CD8537201FEBEF003519F4 /* Assets.xcassets in Resources */,
+				E940DF4620327A1A0053E37D /* thunder.mp3 in Resources */,
 				E9CD853A201FEBEF003519F4 /* LaunchScreen.storyboard in Resources */,
+				E940DF4520327A1A0053E37D /* engine.mp3 in Resources */,
 				E9CD852E201FEBEF003519F4 /* Actions.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
