@@ -14,6 +14,8 @@ class GameScene: SKScene {
     var planeSprite: Plane?
     var islandSprite: Island?
     var cloudSprites: [Cloud] = []
+    var livesLabel: Label?
+    var scoreLabel: Label?
     
     override func didMove(to view: SKView) {
         screenWidth = frame.width
@@ -39,21 +41,14 @@ class GameScene: SKScene {
             self.addChild(cloudSprites[index])
         }
         
-        // add a Label
-        var livesLabel: SKLabelNode = SKLabelNode(text: "Lives: 5")
 
-        //livesLabel.anchorPoint = CGPoint.zero
-        livesLabel.position = CGPoint(x: 73.0, y: frame.height - 33.0)
+        // add lives label
+        livesLabel = Label(labelString: "Lives: 5", position: CGPoint(x: 20.0, y: frame.height - 20.0), fontSize: 30.0, fontName: "Dock51", fontColor: SKColor.yellow, isCentered: false)
+        self.addChild(livesLabel!)
         
-        livesLabel.fontSize = 30.0
-        livesLabel.fontColor = SKColor.yellow
-        livesLabel.fontName = "Dock51"
-        livesLabel.zPosition = 10
-        
-        print(livesLabel.frame.width)
-        print(livesLabel.frame.height)
-        
-        self.addChild(livesLabel)
+        // add score label
+        scoreLabel = Label(labelString: "Score: 99999", position: CGPoint(x: frame.width * 0.45, y: frame.height - 20.0), fontSize: 30.0, fontName: "Dock51", fontColor: SKColor.yellow, isCentered: false)
+        self.addChild(scoreLabel!)
         
         
         // play background engine sound
@@ -118,5 +113,31 @@ class GameScene: SKScene {
             cloud.Update()
             CollisionManager.CheckCollision(scene: self, object1: planeSprite!, object2: cloud)
         }
+        
+        // Update Labels
+        if(ScoreManager.Lives > 0) {
+            livesLabel?.text = "Lives: \(ScoreManager.Lives)"
+            scoreLabel?.text = "Score: \(ScoreManager.Score)"
+        }
+        else {
+            if let view = self.view {
+                if let scene = SKScene(fileNamed: "GameOverScene") {
+                    scene.scaleMode = .aspectFit
+                    view.presentScene(scene)
+                }
+            }
+        }
+        
     }
 }
+
+
+
+
+
+
+
+
+
+
+
